@@ -26,7 +26,7 @@ function Box(props: any) {
   )
 }
 
-const App = () => {
+const Index = () => {
 
   const [invert, _setInvert] = useState<boolean>(false)
   return (
@@ -34,10 +34,10 @@ const App = () => {
     <div className="h-screen">
       <div className='bg-black text-white mt-5 absolute top-0 z-10 bg-opacity-50 w-[80%] h-14 flex items-center justify-evenly rounded-md left-0 right-0 mx-auto shadow-xl'>
         <div className='font-bold text-xl'>Mahith Chitrapu</div>
-        <div>blog</div>
-        <div>resume</div>
-        <div>GitHub</div>
-        <div>LinkedIn</div>
+        <a>blog</a>
+        <a>resume</a>
+        <a>GitHub</a>
+        <a>LinkedIn</a>
       </div>
       <Canvas style={{ width: '100%', height: '100%', fontWeight:'bold'}}>
         <AsciiRenderer 
@@ -55,15 +55,9 @@ const App = () => {
         <OrbitControls />
       </Canvas>
     </div>
-
-
-
-
-
-
   )
 }
 
-export default App
+export default Index
 
       
