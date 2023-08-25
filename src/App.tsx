@@ -10,16 +10,16 @@ function Box(props: any) {
   const [hovered, hover] = useState(false)
   const [clicked, click] = useState(false)
   // Subscribe this component to the render-loop, rotate the mesh every frame
-  useFrame((state, delta) => (ref.current.rotation.x += delta))
+  useFrame((_state, delta) => (ref.current.rotation.x += delta))
   // Return the view, these are regular Threejs elements expressed in JSX
   return (
     <mesh
       {...props}
       ref={ref}
       scale={clicked ? 1.5 : 1}
-      onClick={(event) => click(!clicked)}
+      onClick={(_event) => click(!clicked)}
       onPointerOver={(event) => (event.stopPropagation(), hover(true))}
-      onPointerOut={(event) => hover(false)}>
+      onPointerOut={(_event) => hover(false)}>
       <torusGeometry args={[10, 3, 16, 100]} />
       <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
     </mesh>
@@ -28,7 +28,7 @@ function Box(props: any) {
 
 const App = () => {
 
-  const [invert, setInvert] = useState<boolean>(false)
+  const [invert, _setInvert] = useState<boolean>(false)
   return (
 
     <div className="h-screen">
