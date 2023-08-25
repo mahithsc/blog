@@ -13,7 +13,8 @@ const Header = () => {
                 animate="visible"
                 transition={{ duration: 0.5 }}
             >
-                <motion.div
+                <motion.a
+                href="/"
                     className='font-bold text-xl'
                     variants={{
                         hidden: { opacity: 0, y: -10 },
@@ -24,9 +25,13 @@ const Header = () => {
                     transition={{ duration: 0.5, delay: 0.5 }}
                 >
                     Mahith Chitrapu
-                </motion.div>
+                </motion.a>
                 
                 <motion.a
+
+                href="/blog"
+
+
                     variants={{
                         hidden: { opacity: 0, y: -10 },
                         visible: { opacity: 1, y: 0 }
@@ -40,13 +45,14 @@ const Header = () => {
                 
                 <motion.a
                     href='https://docs.google.com/document/d/1YajIPifoXNTf7gQac1x3pS21Q7--Vta5x_yeAS0tlXo/edit?usp=sharing'
+                    
                     variants={{
                         hidden: { opacity: 0, y: -10 },
                         visible: { opacity: 1, y: 0 }
                     }}
                     initial="hidden"
                     animate="visible"
-                    transition={{ duration: 0.5, delay: 1.5 }}
+                    transition={{ duration: 0.5, delay: 1.1 }}
                 >
                     resume
                 </motion.a>
@@ -59,7 +65,7 @@ const Header = () => {
                     }}
                     initial="hidden"
                     animate="visible"
-                    transition={{ duration: 0.5, delay: 2 }}
+                    transition={{ duration: 0.5, delay: 1.2 }}
                 >
 
                     GitHub
@@ -73,7 +79,7 @@ const Header = () => {
                     }}
                     initial="hidden"
                     animate="visible"
-                    transition={{ duration: 0.5, delay: 2.5 }}
+                    transition={{ duration: 0.5, delay: 1.3 }}
                 >
                     LinkedIn
                 </motion.a>

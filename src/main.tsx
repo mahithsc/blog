@@ -7,11 +7,16 @@ import {
 import "./index.css";
 import Index from "./pages";
 import Header from "./components/Header";
+import Blog from "./pages/blog";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Index/>,
+  },
+  {
+    path: "/blog",
+    element: <Blog/>,
   },
 ]);
 

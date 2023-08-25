@@ -1,28 +1,17 @@
 import { useRef, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { AsciiRenderer, OrbitControls } from '@react-three/drei'
-import { motion } from 'framer-motion'
-import Header from '../components/Header'
 
 
 function Box(props: any) {
     // This reference gives us direct access to the THREE.Mesh object
     const ref: any = useRef()
     // Hold state for hovered and clicked events
-    // const [hovered, hover] = useState(false)
-    // const [clicked, click] = useState(false)
     // Subscribe this component to the render-loop, rotate the mesh every frame
     useFrame((_state, delta) => (ref.current.rotation.y += delta))
     // Return the view, these are regular Threejs elements expressed in JSX
     return (
-        <mesh
-            {...props}
-            ref={ref}
-            // scale={clicked ? 1.5 : 1}
-            // onClick={(_event) => click(!clicked)}
-            // onPointerOver={(event) => (event.stopPropagation(), hover(true))}
-            // onPointerOut={(_event) => hover(false)}
-            >
+        <mesh {...props} ref={ref}>
             <torusGeometry args={[10, 3, 16, 100]} />
             <meshStandardMaterial color='orange' />
         </mesh>
