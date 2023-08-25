@@ -36,8 +36,8 @@ const Index = () => {
                 <div className='font-bold text-xl'>Mahith Chitrapu</div>
                 <a>blog</a>
                 <a href='https://docs.google.com/document/d/1YajIPifoXNTf7gQac1x3pS21Q7--Vta5x_yeAS0tlXo/edit?usp=sharing'>resume</a>
-                <a>GitHub</a>
-                <a>LinkedIn</a>
+                <a href='https://github.com/mahithsc'>GitHub</a>
+                <a href='https://www.linkedin.com/in/mchitrapu/'>LinkedIn</a>
             </div>
             <Canvas style={{ width: '100%', height: '100%', fontWeight: 'bold' }}>
                 <AsciiRenderer
