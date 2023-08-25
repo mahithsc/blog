@@ -34,7 +34,8 @@ const Index = () => {
 
         <div className="h-screen">
             <motion.div
-                className='bg-black text-white mt-5 absolute top-0 z-10 bg-opacity-50 w-[80%] h-14 flex items-center justify-evenly rounded-md left-0 right-0 mx-auto shadow-xl'
+                className='bg-black text-white mt-5 absolute top-0 z-10 bg-opacity-50 w-[80%] h-14 flex 
+                items-center justify-evenly rounded-md left-0 right-0 mx-auto shadow-xl max-w-4xl'
                 variants={{
                     hidden: { opacity: 0, y: -30 },
                     visible: { opacity: 1, y: 0 }
