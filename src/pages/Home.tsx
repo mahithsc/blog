@@ -33,6 +33,7 @@ const Home = () => {
                 <div className='mt-5'>Writings:</div>
                 <ul className='px-5 mt-1'>
                     <li>{'\u2022'} <a href='/blog/1' className='text-blue-700 underline'>Training LLM on Custom Data</a> - Nov 2023</li>
+                    <li>{'\u2022'} <a href='/blog/2' className='text-blue-700 underline'>Understanding The Transformer</a> - Sept 2023</li>
                 </ul>
 
                 <div className='mt-5'>What I'm working on rn:</div>

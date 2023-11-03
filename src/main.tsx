@@ -7,6 +7,7 @@ import {
 import "./index.css";
 import Home from "./pages/Home";
 import TrainingCustomData from "./pages/posts/TrainingCustomData";
+import UnderstandingTheTransformer from "./pages/posts/UnderstandingTheTransformer";
 
 const router = createBrowserRouter([
   {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: "/blog/1",
     element: <TrainingCustomData/>,
+  },
+  {
+    path: "/blog/2",
+    element: <UnderstandingTheTransformer/>,
   },
 ]);
 

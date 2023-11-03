@@ -1,4 +1,3 @@
-import CodeSnippet from '../../components/CodeSnippet';
 import langchainImage from '../../images/langchain.png'
 import langchainDiagram from '../../images/langchain_diagram.jpg'
 import { CodeBlock, atomOneLight } from "react-code-blocks";

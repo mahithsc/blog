@@ -1,4 +1,3 @@
-import React from 'react'
 import { CodeBlock, atomOneLight } from 'react-code-blocks'
 
 const CodeSnippet = (code:string) => {
