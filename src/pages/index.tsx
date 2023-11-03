@@ -45,6 +45,7 @@ const Index = () => {
                     <li>{'\u2022'} <a>Training LLM on Custom Data</a></li>
                 </ul>
             </div>
+            <div className='flex-1'></div>
 
 
             <div className='absolute top-0 right-0 w-1/2 h-screen'>
