@@ -8,6 +8,7 @@ export default {
     extend: {},
     fontFamily: {
       'sans': ['Times New Roman', 'serif'],
+      'mono': ['Monaco', 'serif']
       // ... other font types (serif, mono) if you need them
     },
   },
