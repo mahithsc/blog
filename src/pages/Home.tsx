@@ -3,38 +3,28 @@ import { Canvas, useFrame } from '@react-three/fiber'
 import { AsciiRenderer, OrbitControls, PerspectiveCamera, Torus } from '@react-three/drei'
 
 
-function Box(props: any) {
-    // This reference gives us direct access to the THREE.Mesh object
+function Box() {
     const ref: any = useRef()
-    // Hold state for hovered and clicked events
-    // Subscribe this component to the render-loop, rotate the mesh every frame
     useFrame((_state, delta) => (ref.current.rotation.y += delta))
-    // Return the view, these are regular Threejs elements expressed in JSX
     return (
-        // <mesh {...props} ref={ref}>
-        //     <torusGeometry args={[10, 3, 16, 100]} />
-        //     <meshStandardMaterial color='orange' />
-        // </mesh>
-
         <Torus args={[1, 0.4, 16, 100]} ref={ref}>
             <meshStandardMaterial color={'#FF4500'} />
         </Torus>
     )
 }
 
-const Index = () => {
+const Home = () => {
 
     const [invert, _setInvert] = useState<boolean>(false)
 
     return (
-
         <div className="h-screen flex">
             <div className='flex-1 px-10'>
                 <div className='font-bold text-lg mt-5'>Hi there. Thanks for stopping by. I'm Mahith. </div>
 
                 <div className='mt-5'>Contact:</div>
                 <div className='px-5 mt-1'>
-                    <div className='text-sm'>My email: <a className='underline text-blue-700'>mahith.chitrapu@gmail.com</a></div>
+                    <div className='text-sm'>My email: <a >mahith.chitrapu@gmail.com</a></div>
                     <div className='text-sm'>My Github: <a className='underline text-blue-700' href='https://github.com/mahithsc'>https://github.com/mahithsc</a></div>
                     <div className='text-sm'>My LinkedIn: <a className='underline text-blue-700' href='https://www.linkedin.com/in/mchitrapu'>https://www.linkedin.com/in/mchitrapu</a></div>
                 </div>
@@ -42,7 +32,7 @@ const Index = () => {
 
                 <div className='mt-5'>Writings</div>
                 <ul className='px-5 mt-1'>
-                    <li>{'\u2022'} <a>Training LLM on Custom Data</a></li>
+                    <li>{'\u2022'} <a href='/blog/1' className='text-blue-700 underline'>Training LLM on Custom Data</a> - Nov 2023</li>
                 </ul>
             </div>
             <div className='flex-1'></div>
@@ -64,10 +54,9 @@ const Index = () => {
                     <OrbitControls />
                 </Canvas>
             </div>
-
         </div>
     )
 }
 
-export default Index
+export default Home
 

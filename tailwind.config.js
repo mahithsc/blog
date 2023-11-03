@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'sans': ['Times New Roman', 'serif'],
+      // ... other font types (serif, mono) if you need them
+    },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")]
 }
