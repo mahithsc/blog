@@ -30,9 +30,14 @@ const Home = () => {
                 </div>
 
 
-                <div className='mt-5'>Writings</div>
+                <div className='mt-5'>Writings:</div>
                 <ul className='px-5 mt-1'>
                     <li>{'\u2022'} <a href='/blog/1' className='text-blue-700 underline'>Training LLM on Custom Data</a> - Nov 2023</li>
+                </ul>
+
+                <div className='mt-5'>What I'm working on rn:</div>
+                <ul className='px-5 mt-1'>
+                    <li>{'\u2022'} <a href='https://provant.vercel.app' className='text-blue-700 underline'>provant</a>: Healthcare IT solutions company</li>
                 </ul>
             </div>
             <div className='flex-1'></div>
