@@ -66,7 +66,7 @@ const TrainingCustomData = () => {
         <div className='mb-20'>
             <div className='mx-auto max-w-[60rem] mt-10 px-5'>
                 {/* heading */}
-                <h1 className='font-bold text-2xl'>Training LLMs on Custom Data</h1>
+                <h1 className='font-bold text-3xl'>Training LLMs on Custom Data</h1>
                 <div className='italic mt-1'>This is a writeup discusses the nuances of training Large Language Models using platforms like LangChain, gaining insights into customizing model behavior, the challenges faced, and best practices to achieve optimal results.</div>
                 <img src={langchainImage} className='h-60 mx-auto' />
 
