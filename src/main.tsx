@@ -8,6 +8,7 @@ import "./index.css";
 import Home from "./pages/Home";
 import TrainingCustomData from "./pages/posts/TrainingCustomData";
 import UnderstandingTheTransformer from "./pages/posts/UnderstandingTheTransformer";
+import DocLLM from "./pages/posts/DocLLM";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/blog/2",
     element: <UnderstandingTheTransformer/>,
+  },
+  {
+    path: "/blog/3",
+    element: <DocLLM/>,
   },
 ]);
 

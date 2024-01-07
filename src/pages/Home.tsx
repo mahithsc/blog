@@ -17,6 +17,20 @@ const Home = () => {
 
     const [invert, _setInvert] = useState<boolean>(false)
 
+    const posts = [
+        {
+            "title": "Training LLM on Custom Data",
+            "date": "Nov 2023",
+            "link": "/blog/1"
+        },
+        {
+            "title": "DocLLM",
+            "date": "Nov Jan 2024",
+            "link": "/blog/3"
+        },
+
+    ]
+
     return (
         <div className="h-screen flex">
             {/* when the screen is small */}
@@ -33,7 +47,9 @@ const Home = () => {
 
                 <div className='mt-5'>Writings:</div>
                 <ul className='px-5 mt-1'>
-                    <li>{'\u2022'} <a href='/blog/1' className='text-blue-700 underline'>Training LLM on Custom Data</a> - Nov 2023</li>
+                {posts.map((item, index) => (
+                        <li key={index}>{'\u2022'} <a href={item.link} className='text-blue-700 underline'>{item.title}</a> - {item.date}</li>
+                    ))}
                 </ul>
 
                 <div className='mt-5'>What I'm working on rn:</div>
@@ -55,7 +71,9 @@ const Home = () => {
 
                 <div className='mt-5'>Writings:</div>
                 <ul className='px-5 mt-1'>
-                    <li>{'\u2022'} <a href='/blog/1' className='text-blue-700 underline'>Training LLM on Custom Data</a> - Nov 2023</li>
+                    {posts.map((item, index) => (
+                        <li key={index}>{'\u2022'} <a href={item.link} className='text-blue-700 underline'>{item.title}</a> - {item.date}</li>
+                    ))}
                 </ul>
 
                 <div className='mt-5'>What I'm working on rn:</div>
