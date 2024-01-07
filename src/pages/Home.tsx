@@ -19,7 +19,8 @@ const Home = () => {
 
     return (
         <div className="h-screen flex">
-            <div className='flex-1 px-10'>
+            {/* when the screen is small */}
+            <div className='md:hidden flex-1 px-10 absolute z-10 h-screen w-screen'>
                 <div className='font-bold text-lg mt-5'>Hi there. Thanks for stopping by. I'm Mahith. </div>
 
                 <div className='mt-5'>Contact:</div>
@@ -33,7 +34,6 @@ const Home = () => {
                 <div className='mt-5'>Writings:</div>
                 <ul className='px-5 mt-1'>
                     <li>{'\u2022'} <a href='/blog/1' className='text-blue-700 underline'>Training LLM on Custom Data</a> - Nov 2023</li>
-                    {/* <li>{'\u2022'} <a href='/blog/2' className='text-blue-700 underline'>Understanding The Transformer</a> - Sept 2023</li> */}
                 </ul>
 
                 <div className='mt-5'>What I'm working on rn:</div>
@@ -41,10 +41,30 @@ const Home = () => {
                     <li>{'\u2022'} <a href='https://provant.vercel.app' className='text-blue-700 underline'>provant</a>: Healthcare IT solutions company</li>
                 </ul>
             </div>
-            <div className='flex-1'></div>
+
+            <div className='flex-1 px-10 hidden md:block'>
+                <div className='font-bold text-lg mt-5'>Hi there. Thanks for stopping by. I'm Mahith. </div>
+
+                <div className='mt-5'>Contact:</div>
+                <div className='px-5 mt-1'>
+                    <div className='text-sm'>My email: <a >mahith.chitrapu@gmail.com</a></div>
+                    <div className='text-sm'>My Github: <a className='underline text-blue-700' href='https://github.com/mahithsc'>https://github.com/mahithsc</a></div>
+                    <div className='text-sm'>My LinkedIn: <a className='underline text-blue-700' href='https://www.linkedin.com/in/mchitrapu'>https://www.linkedin.com/in/mchitrapu</a></div>
+                </div>
 
 
-            <div className='absolute top-0 right-0 w-1/2 h-screen'>
+                <div className='mt-5'>Writings:</div>
+                <ul className='px-5 mt-1'>
+                    <li>{'\u2022'} <a href='/blog/1' className='text-blue-700 underline'>Training LLM on Custom Data</a> - Nov 2023</li>
+                </ul>
+
+                <div className='mt-5'>What I'm working on rn:</div>
+                <ul className='px-5 mt-1'>
+                    <li>{'\u2022'} <a href='https://provant.vercel.app' className='text-blue-700 underline'>provant</a>: Healthcare IT solutions company</li>
+                </ul>
+            </div>
+
+            <div className='absolute top-0 right-0 w-screen h-screen z-0 opacity-20 md:opacity-100 md:w-1/2'>
                 <Canvas style={{ width: '100%', height: '100%', fontWeight: 'bold' }}>
                     <AsciiRenderer
                         characters=' .:-+*=%@#'
