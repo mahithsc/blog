@@ -23,11 +23,11 @@ const Home = () => {
             "date": "Nov 2023",
             "link": "/blog/1"
         },
-        {
-            "title": "DocLLM",
-            "date": "Nov Jan 2024",
-            "link": "/blog/3"
-        },
+        // {
+        //     "title": "DocLLM",
+        //     "date": "Nov Jan 2024",
+        //     "link": "/blog/3"
+        // },
 
     ]
 

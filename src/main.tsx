@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import TrainingCustomData from "./pages/posts/TrainingCustomData";
 import UnderstandingTheTransformer from "./pages/posts/UnderstandingTheTransformer";
 import DocLLM from "./pages/posts/DocLLM";
+import { posts } from "./postsConfig";
 
 const router = createBrowserRouter([
   {
