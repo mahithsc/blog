@@ -52,10 +52,10 @@ const Home = () => {
                     ))}
                 </ul>
 
-                <div className='mt-5'>What I'm working on rn:</div>
+                {/* <div className='mt-5'>What I'm working on rn:</div>
                 <ul className='px-5 mt-1'>
                     <li>{'\u2022'} <a href='https://provant.vercel.app' className='text-blue-700 underline'>provant</a>: Healthcare IT solutions company</li>
-                </ul>
+                </ul> */}
             </div>
 
             <div className='flex-1 px-10 hidden md:block'>
@@ -76,10 +76,10 @@ const Home = () => {
                     ))}
                 </ul>
 
-                <div className='mt-5'>What I'm working on rn:</div>
+                {/* <div className='mt-5'>What I'm working on rn:</div>
                 <ul className='px-5 mt-1'>
                     <li>{'\u2022'} <a href='https://provant.vercel.app' className='text-blue-700 underline'>provant</a>: Healthcare IT solutions company</li>
-                </ul>
+                </ul> */}
             </div>
 
             <div className='absolute top-0 right-0 w-screen h-screen z-0 opacity-20 md:opacity-100 md:w-1/2'>
