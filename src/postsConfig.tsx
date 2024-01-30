@@ -8,10 +8,10 @@ export const posts = [
         "link": "/blog/1",
         "component": <TrainingCustomData/>
     },
-    {
-        "title": "DocLLM",
-        "date": "Nov Jan 2024",
-        "link": "/blog/3",
-        "component": <DocLLM/>
-    },
+    // {
+    //     "title": "DocLLM",
+    //     "date": "Nov Jan 2024",
+    //     "link": "/blog/3",
+    //     "component": <DocLLM/>
+    // },
 ]
